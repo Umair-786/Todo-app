@@ -70,7 +70,7 @@ function renderTasks() {
 
     deleteButton.className = "delete-button";
     deleteButton.type = "button";
-    deleteButton.textContent = "Delete";
+    deleteButton.textContent = "Complete";
     deleteButton.setAttribute("aria-label", `Delete task: ${task.text}`);
     deleteButton.addEventListener("click", () => deleteTask(task.id));
 
