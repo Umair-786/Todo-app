@@ -33,7 +33,7 @@ function display(task) {
     }
 
     button.type = "button";
-    button.textContent = task.completed ? "Undo" : "Complete";
+    button.textContent =  "Completed";
 
     button.onclick = function () {
     tasks = tasks.filter((item) => item.id !== task.id);
