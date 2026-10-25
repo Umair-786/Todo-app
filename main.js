@@ -33,6 +33,7 @@ function display(task) {
     }
 
     button.type = "button";
+    button.className = "complete-button";
     button.textContent =  "Completed";
 
     button.onclick = function () {
