@@ -10,11 +10,11 @@ body {
     margin-top:50px;
 }
 .button{
-    border-right: 2px solid #000;
-    border-bottom: 2px solid #000;
-    border-left: 0px solid #000;
-    border-top: 0px solid #000;
-    background: #0000005E;
+    border-right: 2px solid #047af1;
+    border-bottom: 2px solid #047af1;
+    border-left: 0px solid #047af1;
+    border-top: 0px solid #047af1;
+    background: #2371bf;
     padding:10px;
     margin-left:7px;
     font-size:16px; 
@@ -54,4 +54,15 @@ li:hover{
 .completed {
     text-decoration: line-through;
     opacity: 0.6;
+}
+.complete-button{
+    background-color: #bcf2a8;
+    color: #56f41c;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.complete-button:hover {
+    background-color:#81ed5a;
 }
