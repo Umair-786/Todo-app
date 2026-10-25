@@ -1,34 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="A simple to-do list that saves tasks in your browser." />
-    <title>My To-Do List</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
-  </head>
-  <body>
-    <main>
-      <h1>My to-do list</h1>
-      <section class="container" aria-label="To-do list">
-        <form id="task-form">
-          <label for="taskinput">New task</label>
-          <div class="task-entry">
-            <input
-              type="text"
-              id="taskinput"
-              name="task"
-              placeholder="Enter a new task"
-              maxlength="200"
-              required
-            />
-            <button class="button" type="submit">Add task</button>
-          </div>
-        </form>
-        <p id="status" role="status" aria-live="polite"></p>
-        <ul id="tasklist" aria-label="Your tasks"></ul>
-      </section>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>To do list</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body onload="loadpage()">
+  <h1>My to do list</h1>
+  <div class="container">
+    <input type="text"  id="taskinput" placeholder="Enter a new task">
+    <button class="button" onclick="addtask()">Add task</button>
+    <ul id="tasklist"></ul>
+  </div>
+  <script src="main.js"></script>
+</body>
 </html>
