@@ -36,13 +36,10 @@ function display(task) {
     button.textContent = task.completed ? "Undo" : "Complete";
 
     button.onclick = function () {
-        task.completed = !task.completed;
-
-        label.classList.toggle("completed", task.completed);
-        button.textContent = task.completed ? "Undo" : "Complete";
-
-        localStorage.setItem("todo", JSON.stringify(tasks));
-    };
+    tasks = tasks.filter((item) => item.id !== task.id);
+    localStorage.setItem("todo", JSON.stringify(tasks));
+    li.remove();
+};
 
     li.appendChild(label);
     li.appendChild(button);
