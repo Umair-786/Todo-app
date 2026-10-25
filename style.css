@@ -127,8 +127,8 @@ button {
 .delete-button {
   flex: 0 0 auto;
   padding: 0.45rem 0.65rem;
-  background: #fee2e2;
-  color: #991b1b;
+  background: ##e3fcdd;
+  color: #34991b;
   font-size: 0.9rem;
 }
 
