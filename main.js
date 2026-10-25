@@ -34,7 +34,7 @@ function display(task) {
 
     button.type = "button";
     button.className = "complete-button";
-    button.textContent =  "Completed";
+    button.textContent =  "✓";
 
     button.onclick = function () {
     tasks = tasks.filter((item) => item.id !== task.id);
